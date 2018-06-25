@@ -48,6 +48,7 @@ function _callback_getEvent() {
 function _callback_handleConfirmation($pid) {
 	//print ($pid);
   $updateStatus = mysql_query("UPDATE `procs` SET `status`='work' WHERE `pid`='$pid'");
+	//print mysql_error;
 }
 
 function  _callback_uploadAndDeploy($pid) {
